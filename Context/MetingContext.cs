@@ -9,9 +9,9 @@ namespace exampleWebAPI.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string ipAddress = "145.74.164.65";
+            string ipAddress = "localhost";
             Console.WriteLine("ip: " + ipAddress);
-            optionsBuilder.UseMySql(@"Server="+ ipAddress +";port=32768;database=metingen;uid=root;pwd=root;");
+            optionsBuilder.UseMySql(@"Server="+ ipAddress +";database=metingen;uid=root;");
         }
     }
 }

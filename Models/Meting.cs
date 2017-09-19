@@ -1,16 +1,17 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace exampleWebAPI.Models
 {
     public class Meting
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public string ipSender { get; set; }
-        public DateTime tijdStip { get; set; }
-        public double temperatuurCelsius { get; set; }
-        public double temperatuurFahrenheit { get; set; }
-        public double lichtIntensiteit { get; set; }
+        public string Weatherstation { get; set; }
+        public DateTime Timestamp { get; set; }
+        public double Temperature { get; set; }
+        public double Illuminance { get; set; }
     }
 }

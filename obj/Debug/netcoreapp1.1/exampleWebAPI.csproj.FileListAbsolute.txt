@@ -1,0 +1,4 @@
+C:\Users\ArneHe\Source\Repos\tempGateway\obj\Debug\netcoreapp1.1\exampleWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\ArneHe\Source\Repos\tempGateway\obj\Debug\netcoreapp1.1\exampleWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\ArneHe\Source\Repos\tempGateway\obj\Debug\netcoreapp1.1\exampleWebAPI.AssemblyInfoInputs.cache
+C:\Users\ArneHe\Source\Repos\tempGateway\obj\Debug\netcoreapp1.1\exampleWebAPI.AssemblyInfo.cs
