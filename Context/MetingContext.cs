@@ -2,6 +2,8 @@
 using System.IO;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.AzureAppServices;
 
 namespace exampleWebAPI.Context
 {
@@ -20,7 +22,13 @@ namespace exampleWebAPI.Context
 
             Configuration = builder.Build();
             
-            optionsBuilder.UseMySql(Configuration.GetConnectionString("MetingDatase"));
+            Console.WriteLine("Home Directory:" + Directory.GetCurrentDirectory());
+            Console.Write("Database String:");
+            Console.WriteLine($"{Configuration.GetConnectionString("MetingDatabase")}");
+            
+            
+            
+            optionsBuilder.UseMySql($"{Configuration.GetConnectionString("MetingDatabase")}");
         }
     }
 }
