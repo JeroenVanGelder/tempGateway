@@ -35,6 +35,7 @@ namespace exampleWebAPI.Controllers
         [HttpPost]
         public IActionResult Post([FromBody]Meting value)
         {
+            value.Timestamp=DateTime.Now;
             _context.MetingItems.Add(value);
             _context.SaveChanges();
             return StatusCode(201, value);

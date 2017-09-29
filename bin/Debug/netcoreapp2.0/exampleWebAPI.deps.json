@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "1b5f983267e86c698606aba708b318e6809af659"
+    "signature": "9bae70fce3d8792acf01b01bec0c1b8ee1f832a2"
   },
   "compilationOptions": {
     "defines": [
@@ -23,13 +23,16 @@
     ".NETCoreApp,Version=v2.0": {
       "exampleWebAPI/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.2-rc",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.AspNetCore.Mvc": "2.0.0",
           "Microsoft.EntityFrameworkCore.Design": "2.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.0",
           "Microsoft.Extensions.Logging.Debug": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
-          "Pomelo.EntityFrameworkCore.MySql": "2.0.0"
+          "Pomelo.EntityFrameworkCore.MySql": "2.0.0",
+          "System.Net.Http.Formatting": "4.0.20710",
+          "System.Runtime.Serialization.Xml": "4.1.0"
         },
         "runtime": {
           "exampleWebAPI.dll": {}
@@ -125,6 +128,7 @@
           "lib/netstandard1.6/Microsoft.AI.DependencyCollector.dll": {}
         }
       },
+      "Microsoft.AspNet.WebApi.Client/5.2.2-rc": {},
       "Microsoft.AspNetCore/2.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics": "2.0.0",
@@ -3137,6 +3141,11 @@
           }
         }
       },
+      "System.Net.Http.Formatting/4.0.20710": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "5.2.2-rc"
+        }
+      },
       "System.Net.NameResolution/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -3416,6 +3425,7 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Runtime.Serialization.Xml/4.1.0": {},
       "System.Security.AccessControl/4.4.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -4105,6 +4115,13 @@
       "sha512": "sha512-RWxdX90MY6tNF8S5lwRvJcHiBMIWwVLCxd4TGIEl3X0yAKaolY2vs4zTCvyCIVkEAMs1aInTgWkYwOjzYvAHWw==",
       "path": "microsoft.applicationinsights.dependencycollector/2.4.1",
       "hashPath": "microsoft.applicationinsights.dependencycollector.2.4.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.2-rc": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rgwj16CEMAx+/2nP+Pyfndmg/ww+BqYMBUDRPY06c1/D1x6X2GqnNWR5dIJpq8andy0SLS41ZV6Tvc66NS7eVA==",
+      "path": "microsoft.aspnet.webapi.client/5.2.2-rc",
+      "hashPath": "microsoft.aspnet.webapi.client.5.2.2-rc.nupkg.sha512"
     },
     "Microsoft.AspNetCore/2.0.0": {
       "type": "package",
@@ -5702,6 +5719,13 @@
       "path": "system.net.http/4.3.0",
       "hashPath": "system.net.http.4.3.0.nupkg.sha512"
     },
+    "System.Net.Http.Formatting/4.0.20710": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I7WXU0Cyq5uv22SW06vLD4diWXijRQHVczkNBzmNvzzX3Moa/8RsMuoI1qOzyj2HfB40X69uFCR9QONmsHEgNw==",
+      "path": "system.net.http.formatting/4.0.20710",
+      "hashPath": "system.net.http.formatting.4.0.20710.nupkg.sha512"
+    },
     "System.Net.NameResolution/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -5883,6 +5907,13 @@
       "sha512": "sha512-Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "hashPath": "system.runtime.serialization.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.Serialization.Xml/4.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7TvzeIeNvT2GLpmSy/3J1VIkT70MroNujIiBWBe0qeM6/QFPdCcF/1Zxx9Ohc/iZUPAANb1wMruCAiYY2HTTrg==",
+      "path": "system.runtime.serialization.xml/4.1.0",
+      "hashPath": "system.runtime.serialization.xml.4.1.0.nupkg.sha512"
     },
     "System.Security.AccessControl/4.4.0": {
       "type": "package",

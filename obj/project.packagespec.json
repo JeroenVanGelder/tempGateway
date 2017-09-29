@@ -45,6 +45,18 @@
         "Microsoft.EntityFrameworkCore.Tools": {
           "target": "Package",
           "version": "2.0.0-rtm-*"
+        },
+        "Microsoft.AspNet.WebApi.Client": {
+          "target": "Package",
+          "version": "5.2.2-rc"
+        },
+        "System.Net.Http.Formatting": {
+          "target": "Package",
+          "version": "4.0.20710.0"
+        },
+        "System.Runtime.Serialization.Xml": {
+          "target": "Package",
+          "version": "4.1.0"
         }
       }
     }

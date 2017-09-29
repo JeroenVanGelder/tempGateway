@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 2,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "Libuv/1.10.0": {
@@ -92,6 +92,9 @@
         "runtime": {
           "lib/netstandard1.6/Microsoft.AI.DependencyCollector.dll": {}
         }
+      },
+      "Microsoft.AspNet.WebApi.Client/5.2.2-rc": {
+        "type": "package"
       },
       "Microsoft.AspNetCore/2.0.0": {
         "type": "package",
@@ -3784,6 +3787,12 @@
           }
         }
       },
+      "System.Net.Http.Formatting/4.0.20710": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": "[2.0.20710, 2.1.0)"
+        }
+      },
       "System.Net.NameResolution/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -4204,6 +4213,9 @@
         "runtime": {
           "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll": {}
         }
+      },
+      "System.Runtime.Serialization.Xml/4.1.0": {
+        "type": "package"
       },
       "System.Security.AccessControl/4.4.0": {
         "type": "package",
@@ -4926,6 +4938,19 @@
         "lib/netstandard1.6/Microsoft.AI.DependencyCollector.xml",
         "microsoft.applicationinsights.dependencycollector.2.4.1.nupkg.sha512",
         "microsoft.applicationinsights.dependencycollector.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.WebApi.Client/5.2.2-rc": {
+      "sha512": "rgwj16CEMAx+/2nP+Pyfndmg/ww+BqYMBUDRPY06c1/D1x6X2GqnNWR5dIJpq8andy0SLS41ZV6Tvc66NS7eVA==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.2-rc",
+      "files": [
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.2-rc.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
       ]
     },
     "Microsoft.AspNetCore/2.0.0": {
@@ -9977,6 +10002,15 @@
         "system.net.http.nuspec"
       ]
     },
+    "System.Net.Http.Formatting/4.0.20710": {
+      "sha512": "I7WXU0Cyq5uv22SW06vLD4diWXijRQHVczkNBzmNvzzX3Moa/8RsMuoI1qOzyj2HfB40X69uFCR9QONmsHEgNw==",
+      "type": "package",
+      "path": "system.net.http.formatting/4.0.20710",
+      "files": [
+        "system.net.http.formatting.4.0.20710.nupkg.sha512",
+        "system.net.http.formatting.nuspec"
+      ]
+    },
     "System.Net.NameResolution/4.3.0": {
       "sha512": "AFYl08R7MrsrEjqpQWTZWBadqXyTzNDaWpMqyxhb0d6sGhV6xMDKueuBXlLL30gz+DIRY6MpdgnHWlCh5wmq9w==",
       "type": "package",
@@ -11288,6 +11322,71 @@
         "runtimes/aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll",
         "system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
         "system.runtime.serialization.primitives.nuspec"
+      ]
+    },
+    "System.Runtime.Serialization.Xml/4.1.0": {
+      "sha512": "7TvzeIeNvT2GLpmSy/3J1VIkT70MroNujIiBWBe0qeM6/QFPdCcF/1Zxx9Ohc/iZUPAANb1wMruCAiYY2HTTrg==",
+      "type": "package",
+      "path": "system.runtime.serialization.xml/4.1.0",
+      "files": [
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/DNXCore50/System.Runtime.Serialization.Xml.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Runtime.Serialization.Xml.dll",
+        "lib/netcore50/System.Runtime.Serialization.Xml.dll",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/dotnet5.1/System.Runtime.Serialization.Xml.dll",
+        "ref/dotnet5.1/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/de/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/es/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/fr/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/it/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/ja/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/ko/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/ru/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/zh-hans/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.1/zh-hant/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/System.Runtime.Serialization.Xml.dll",
+        "ref/dotnet5.4/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/de/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/es/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/fr/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/it/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/ja/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/ko/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/ru/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/zh-hans/System.Runtime.Serialization.Xml.xml",
+        "ref/dotnet5.4/zh-hant/System.Runtime.Serialization.Xml.xml",
+        "ref/net45/_._",
+        "ref/net46/System.Runtime.Serialization.Xml.dll",
+        "ref/netcore50/System.Runtime.Serialization.Xml.dll",
+        "ref/netcore50/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/de/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/es/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/fr/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/it/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/ja/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/ko/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/ru/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/zh-hans/System.Runtime.Serialization.Xml.xml",
+        "ref/netcore50/zh-hant/System.Runtime.Serialization.Xml.xml",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Runtime.Serialization.Xml.dll",
+        "system.runtime.serialization.xml.4.1.0.nupkg.sha512",
+        "system.runtime.serialization.xml.nuspec"
       ]
     },
     "System.Security.AccessControl/4.4.0": {
@@ -12775,18 +12874,20 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Microsoft.AspNet.WebApi.Client >= 5.2.2-rc",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.AspNetCore.Mvc >= 2.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 2.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 2.0.0-rtm-*",
       "Microsoft.Extensions.Logging.Debug >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Pomelo.EntityFrameworkCore.MySql >= 2.0.0-rtm-*"
+      "Pomelo.EntityFrameworkCore.MySql >= 2.0.0-rtm-*",
+      "System.Net.Http.Formatting >= 4.0.20710",
+      "System.Runtime.Serialization.Xml >= 4.1.0"
     ]
   },
   "packageFolders": {
-    "/home/jeroenvangelder/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/home/jeroenvangelder/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -12794,30 +12895,15 @@
       "projectUniqueName": "/home/jeroenvangelder/workspace/IOT-I/dotnet/weerstationGateway/exampleWebAPI.csproj",
       "projectName": "exampleWebAPI",
       "projectPath": "/home/jeroenvangelder/workspace/IOT-I/dotnet/weerstationGateway/exampleWebAPI.csproj",
-      "packagesPath": "/home/jeroenvangelder/.nuget/packages/",
       "outputPath": "/home/jeroenvangelder/workspace/IOT-I/dotnet/weerstationGateway/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
-      ],
-      "configFilePaths": [
-        "/home/jeroenvangelder/.nuget/NuGet/NuGet.Config"
-      ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
-      "sources": {
-        "https://api.nuget.org/v3/index.json": {}
-      },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {}
         }
-      },
-      "warningProperties": {
-        "warnAsError": [
-          "NU1605"
-        ]
       }
     },
     "frameworks": {
@@ -12825,8 +12911,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
+            "version": "2.0.0"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
@@ -12851,13 +12936,20 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
             "version": "2.0.0-rtm-*"
+          },
+          "Microsoft.AspNet.WebApi.Client": {
+            "target": "Package",
+            "version": "5.2.2-rc"
+          },
+          "System.Net.Http.Formatting": {
+            "target": "Package",
+            "version": "4.0.20710.0"
+          },
+          "System.Runtime.Serialization.Xml": {
+            "target": "Package",
+            "version": "4.1.0"
           }
-        },
-        "imports": [
-          "net461"
-        ],
-        "assetTargetFallback": true,
-        "warn": true
+        }
       }
     }
   }

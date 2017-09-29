@@ -26,8 +26,6 @@ namespace exampleWebAPI.Context
             Console.Write("Database String:");
             Console.WriteLine($"{Configuration.GetConnectionString("MetingDatabase")}");
             
-            
-            
             optionsBuilder.UseMySql($"{Configuration.GetConnectionString("MetingDatabase")}");
         }
     }
