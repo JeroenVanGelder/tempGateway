@@ -5,13 +5,14 @@ namespace exampleWebAPI.Context
 {
     public class MetingContext : DbContext
     {
-        public DbSet<exampleWebAPI.Models.Meting> MetingItems { get; set; }
+        public DbSet<Models.Meting> Meting { get; set; }
+        public DbSet<Models.Token> Token { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string ipAddress = "localhost";
+            const string ipAddress = "localhost";
             Console.WriteLine("ip: " + ipAddress);
-            optionsBuilder.UseMySql(@"Server="+ ipAddress +";database=metingen;uid=root;");
+            optionsBuilder.UseMySql(@"Server=" + ipAddress + ";database=Weerstation;uid=root;");
         }
     }
 }

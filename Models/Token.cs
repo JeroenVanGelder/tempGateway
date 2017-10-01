@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 
 namespace exampleWebAPI.Util
 {
-    public partial class Token
+    public  class Token
     {
         public Token(string asFormattedString)
         {
@@ -12,6 +12,9 @@ namespace exampleWebAPI.Util
             AccessToken = (string) token["access_token"];
             TokenType = (string) token["token_type"];
             UserName = (string) token["userName"];
+
+            //Tue, 26 Sep 2017 07:18:55 GMT
+//        public string Pattern { get; } = " ddd, dd MMM yyyy HH':'mm':'ss 'GMT'";
 //
 //            var convertedDate = DateTime.Parse(token[".issued"].ToString());
 //            Console.WriteLine("Converted {0} to {1} time {2}",
@@ -23,7 +26,6 @@ namespace exampleWebAPI.Util
             ExpiresIn = (int) token["expires_in"];
             Issued = DateTime.Parse(token[".issued"].ToString());
             Expires = DateTime.Parse(token[".expires"].ToString());
-            ;
         }
 
         public Token()
@@ -61,7 +63,7 @@ namespace exampleWebAPI.Util
 
         public string GetTokenString()
         {
-            return "Bearer " + AccessToken;
+            return $"{TokenType} {AccessToken}";
         }
     }
 }
