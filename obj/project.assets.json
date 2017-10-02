@@ -12794,11 +12794,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\ArneHe\\Source\\Repos\\tempGateway\\exampleWebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\ArneHe\\RiderProjects\\tempGateway\\exampleWebAPI.csproj",
       "projectName": "exampleWebAPI",
-      "projectPath": "C:\\Users\\ArneHe\\Source\\Repos\\tempGateway\\exampleWebAPI.csproj",
+      "projectPath": "C:\\Users\\ArneHe\\RiderProjects\\tempGateway\\exampleWebAPI.csproj",
       "packagesPath": "C:\\Users\\ArneHe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ArneHe\\Source\\Repos\\tempGateway\\obj\\",
+      "outputPath": "C:\\Users\\ArneHe\\RiderProjects\\tempGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

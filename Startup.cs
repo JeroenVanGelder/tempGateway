@@ -25,8 +25,8 @@ namespace exampleWebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<MetingContext>();
-            using (var context = new MetingContext())
+            services.AddDbContext<WeerstationContext>();
+            using (var context = new WeerstationContext())
             {
                 context.Database.EnsureCreated();
             }

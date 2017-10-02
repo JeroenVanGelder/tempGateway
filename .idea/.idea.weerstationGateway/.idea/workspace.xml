@@ -1,0 +1,1372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="927d6bae-2d43-4459-8445-3d3d97e53028" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.weerstationGateway/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.weerstationGateway/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/MyCookie.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/User.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Models/Weerstation.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/desktop.ini" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AI.DependencyCollector.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.ApplicationInsights.AspNetCore.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.ApplicationInsights.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Antiforgery.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.ApplicationInsights.HostingStartup.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.Cookies.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.Facebook.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.Google.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.MicrosoftAccount.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.OAuth.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.Twitter.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authentication.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authorization.Policy.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Authorization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.AzureAppServices.HostingStartup.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.AzureAppServicesIntegration.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.CookiePolicy.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Cors.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Cryptography.Internal.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.DataProtection.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.DataProtection.AzureStorage.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.DataProtection.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.DataProtection.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Diagnostics.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Hosting.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Hosting.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Html.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Http.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Http.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Http.Features.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Http.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.HttpOverrides.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Identity.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.JsonPatch.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Localization.Routing.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Localization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.MiddlewareAnalysis.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.ApiExplorer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.Cors.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.DataAnnotations.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.Formatters.Json.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.Localization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.Razor.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.RazorPages.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.TagHelpers.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.ViewFeatures.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Mvc.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.NodeServices.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Owin.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Razor.Language.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Razor.Runtime.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Razor.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.ResponseCaching.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.ResponseCaching.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.ResponseCompression.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Rewrite.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Routing.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Routing.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Server.HttpSys.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Server.IISIntegration.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Server.Kestrel.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Server.Kestrel.Https.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Server.Kestrel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.Session.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.SpaServices.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.StaticFiles.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.WebSockets.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.WebUtilities.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.AspNetCore.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Azure.KeyVault.WebKey.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Azure.KeyVault.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.CodeAnalysis.CSharp.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.CodeAnalysis.Razor.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.CodeAnalysis.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Data.Edm.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Data.OData.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Data.Sqlite.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.DotNet.PlatformAbstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.EntityFrameworkCore.Design.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.EntityFrameworkCore.InMemory.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.EntityFrameworkCore.Relational.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.EntityFrameworkCore.SqlServer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.EntityFrameworkCore.Sqlite.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.EntityFrameworkCore.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Caching.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Caching.Memory.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Caching.Redis.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Caching.SqlServer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.AzureKeyVault.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.Binder.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.CommandLine.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.EnvironmentVariables.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.FileExtensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.Ini.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.Json.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.UserSecrets.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.Xml.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Configuration.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.DependencyModel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.DiagnosticAdapter.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.FileProviders.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.FileProviders.Composite.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.FileProviders.Embedded.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.FileProviders.Physical.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.FileSystemGlobbing.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Hosting.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Identity.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Identity.Stores.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Localization.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Localization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Logging.AzureAppServices.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Logging.Configuration.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Logging.Console.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Logging.Debug.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Logging.EventSource.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Logging.TraceSource.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Logging.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.ObjectPool.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Options.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.PlatformAbstractions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Extensions.WebEncoders.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.IdentityModel.Clients.ActiveDirectory.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.IdentityModel.Logging.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.IdentityModel.Protocols.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.IdentityModel.Tokens.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Net.Http.Headers.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Rest.ClientRuntime.Azure.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.Rest.ClientRuntime.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.Web.BrowserLink.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Microsoft.WindowsAzure.Storage.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/MySqlConnector.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Newtonsoft.Json.Bson.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Newtonsoft.Json.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Pomelo.EntityFrameworkCore.MySql.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Pomelo.JsonObject.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/Remotion.Linq.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/SQLitePCLRaw.batteries_green.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/SQLitePCLRaw.batteries_v2.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/SQLitePCLRaw.core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/SQLitePCLRaw.provider.e_sqlite3.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/StackExchange.Redis.StrongName.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/System.Data.SqlClient.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/System.IdentityModel.Tokens.Jwt.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/System.Interactive.Async.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/System.Security.Cryptography.Xml.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/System.Spatial.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/System.Text.Encoding.CodePages.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/System.Text.Encodings.Web.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/de/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/de/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/de/System.Spatial.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/es/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/es/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/es/System.Spatial.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/fr/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/fr/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/fr/System.Spatial.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/it/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/it/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/it/System.Spatial.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ja/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ja/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ja/System.Spatial.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ko/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ko/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ko/System.Spatial.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/Microsoft.CSharp.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/Microsoft.VisualBasic.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/Microsoft.Win32.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/Microsoft.Win32.Registry.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.AppContext.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Buffers.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Collections.Concurrent.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Collections.Immutable.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Collections.NonGeneric.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Collections.Specialized.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Collections.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ComponentModel.Annotations.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ComponentModel.Composition.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ComponentModel.DataAnnotations.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ComponentModel.EventBasedAsync.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ComponentModel.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ComponentModel.TypeConverter.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ComponentModel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Configuration.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Console.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Core.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Data.Common.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Data.SqlClient.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Data.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.Contracts.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.Debug.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.DiagnosticSource.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.FileVersionInfo.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.Process.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.StackTrace.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.TextWriterTraceListener.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.Tools.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.TraceSource.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Diagnostics.Tracing.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Drawing.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Drawing.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Dynamic.Runtime.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Globalization.Calendars.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Globalization.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Globalization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.Compression.FileSystem.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.Compression.ZipFile.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.Compression.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.FileSystem.DriveInfo.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.FileSystem.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.FileSystem.Watcher.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.FileSystem.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.IsolatedStorage.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.MemoryMappedFiles.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.Pipes.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.UnmanagedMemoryStream.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.IO.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Linq.Expressions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Linq.Parallel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Linq.Queryable.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Linq.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.Http.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.HttpListener.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.Mail.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.NameResolution.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.NetworkInformation.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.Ping.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.Requests.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.Security.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.ServicePoint.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.Sockets.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.WebClient.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.WebHeaderCollection.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.WebProxy.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.WebSockets.Client.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.WebSockets.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Net.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Numerics.Vectors.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Numerics.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ObjectModel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.DispatchProxy.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.Emit.ILGeneration.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.Emit.Lightweight.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.Emit.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.Metadata.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.TypeExtensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Reflection.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Resources.Reader.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Resources.ResourceManager.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Resources.Writer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.CompilerServices.Unsafe.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.CompilerServices.VisualC.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Handles.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.InteropServices.RuntimeInformation.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.InteropServices.WindowsRuntime.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.InteropServices.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Loader.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Numerics.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Serialization.Formatters.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Serialization.Json.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Serialization.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Serialization.Xml.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.Serialization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Runtime.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.AccessControl.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Claims.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Cryptography.Algorithms.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Cryptography.Csp.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Cryptography.Encoding.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Cryptography.Primitives.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Cryptography.X509Certificates.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Cryptography.Xml.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Principal.Windows.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.Principal.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.SecureString.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Security.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ServiceModel.Web.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ServiceProcess.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Text.Encoding.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Text.Encoding.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Text.RegularExpressions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.Overlapped.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.Tasks.Dataflow.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.Tasks.Extensions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.Tasks.Parallel.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.Tasks.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.Thread.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.ThreadPool.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.Timer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Threading.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Transactions.Local.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Transactions.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.ValueTuple.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Web.HttpUtility.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Web.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Windows.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.Linq.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.ReaderWriter.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.Serialization.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.XDocument.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.XPath.XDocument.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.XPath.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.XmlDocument.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.XmlSerializer.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.Xml.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/System.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/WindowsBase.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/mscorlib.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/refs/netstandard.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ru/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ru/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/ru/System.Spatial.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/linux-arm/native/libuv.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/linux-arm64/native/libuv.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/linux-armel/native/libuv.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/linux-x64/native/libe_sqlite3.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/linux-x64/native/libuv.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/linux-x86/native/libe_sqlite3.so" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/osx-x64/native/libe_sqlite3.dylib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/osx/native/libuv.dylib" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/unix/lib/netstandard2.0/System.Data.SqlClient.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win-arm/native/libuv.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win-arm64/native/sni.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win-x64/native/libuv.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win-x64/native/sni.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win-x86/native/libuv.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win-x86/native/sni.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win/lib/netstandard2.0/System.Data.SqlClient.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win7-x64/native/e_sqlite3.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/runtimes/win7-x86/native/e_sqlite3.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/zh-Hans/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/zh-Hans/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/zh-Hans/System.Spatial.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/zh-Hant/Microsoft.Data.Edm.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/zh-Hant/Microsoft.Data.OData.resources.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/zh-Hant/System.Spatial.resources.dll" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.vs/tempGateway/v15/.suo" afterPath="$PROJECT_DIR$/.vs/tempGateway/v15/.suo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.vs/weerstationGateway/v15/.suo" afterPath="$PROJECT_DIR$/.vs/weerstationGateway/v15/.suo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.vs/weerstationGateway/v15/sqlite3/storage.ide" afterPath="$PROJECT_DIR$/.vs/weerstationGateway/v15/sqlite3/storage.ide" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/exampleWebAPI.dll" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/exampleWebAPI.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/exampleWebAPI.pdb" afterPath="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/exampleWebAPI.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.csproj.CoreCompileInputs.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.csprojResolveAssemblyReference.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.dll" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.dll" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.pdb" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.pdb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/Release/netcoreapp2.0/exampleWebAPI.csproj.CoreCompileInputs.cache" afterPath="$PROJECT_DIR$/obj/Release/netcoreapp2.0/exampleWebAPI.csproj.CoreCompileInputs.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/exampleWebAPI.csproj.nuget.cache" afterPath="$PROJECT_DIR$/obj/exampleWebAPI.csproj.nuget.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Context/WeerstationContext.cs" afterPath="$PROJECT_DIR$/Context/WeerstationContext.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controllers/MetingController.cs" afterPath="$PROJECT_DIR$/Controllers/MetingController.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/Meting.cs" afterPath="$PROJECT_DIR$/Models/Meting.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Models/Token.cs" afterPath="$PROJECT_DIR$/Models/Token.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Properties/launchSettings.json" afterPath="$PROJECT_DIR$/Properties/launchSettings.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Startup.cs" afterPath="$PROJECT_DIR$/Startup.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Util/HttpHeader.cs" afterPath="$PROJECT_DIR$/Util/HttpHeader.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Util/ResetToken.cs" afterPath="$PROJECT_DIR$/Util/ResetToken.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/IISSupport/IISExeLauncherArgs.txt" afterPath="$PROJECT_DIR$/bin/IISSupport/IISExeLauncherArgs.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/IISSupport/pidfile.txt" afterPath="$PROJECT_DIR$/bin/IISSupport/pidfile.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exampleWebAPI.csproj" afterPath="$PROJECT_DIR$/exampleWebAPI.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exampleWebAPI.csproj.user" afterPath="$PROJECT_DIR$/exampleWebAPI.csproj.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/obj/Debug/netcoreapp2.0/exampleWebAPI.csproj.FileListAbsolute.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/exampleWebAPI.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/obj/exampleWebAPI.csproj.nuget.g.props" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/exampleWebAPI.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/obj/exampleWebAPI.csproj.nuget.g.targets" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/project.assets.json" afterPath="$PROJECT_DIR$/obj/project.assets.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/obj/project.packagespec.json" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weerstationGateway.sln" afterPath="$PROJECT_DIR$/weerstationGateway.sln" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="HttpHeader.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Util/HttpHeader.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-487">
+              <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+              <folding>
+                <marker date="1506951418350" expanded="false" signature="6:95" ph="..." />
+                <marker date="1506951418350" expanded="true" signature="125:2725" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="155:2723" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="409:516" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="560:814" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="857:936" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="1001:2353" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="1500:1571" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="1587:2143" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="1730:2129" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="1882:2111" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="2175:2343" ph="{...}" />
+                <marker date="1506951418350" expanded="true" signature="2408:2717" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>GetToken</find>
+      <find>GetVerToken</find>
+      <find>token</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/out/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/out/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/out/web.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/out/exampleWebAPI.deps.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/out/exampleWebAPI.runtimeconfig.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Util/ResetToken.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Token.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Meting.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Context/WeerstationContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Controllers/MetingController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Util/HttpHeader.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/Weerstation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Models/MyCookie.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Util/Token.cs" />
+        <option value="$PROJECT_DIR$/web.config" />
+        <option value="$PROJECT_DIR$/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Context/MetingContext.cs" />
+        <option value="$PROJECT_DIR$/Models/Weestation.cs" />
+        <option value="$PROJECT_DIR$/Models/Weesrtation.cs" />
+        <option value="$PROJECT_DIR$/Models/Weerstation.cs" />
+        <option value="$PROJECT_DIR$/Models/Cookie.cs" />
+        <option value="$PROJECT_DIR$/Models/MyCookie.cs" />
+        <option value="$PROJECT_DIR$/Models/Token.cs" />
+        <option value="$PROJECT_DIR$/Context/WeerstationContext.cs" />
+        <option value="$PROJECT_DIR$/Models/Meting.cs" />
+        <option value="$PROJECT_DIR$/Controllers/MetingController.cs" />
+        <option value="$PROJECT_DIR$/Models/User.cs" />
+        <option value="$PROJECT_DIR$/Util/ResetToken.cs" />
+        <option value="$PROJECT_DIR$/Util/HttpHeader.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weerstationGateway (1 project)" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exampleWebAPI" />
+              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="Docker Deployment">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/exampleWebAPI.csproj" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/netcoreapp2.0/exampleWebAPI.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Production" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="927d6bae-2d43-4459-8445-3d3d97e53028" name="Default" comment="" />
+      <created>1506333378016</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1506333378016</updated>
+      <workItem from="1506333379910" duration="1168000" />
+      <workItem from="1506337574885" duration="784000" />
+      <workItem from="1506361199334" duration="9460000" />
+      <workItem from="1506402728565" duration="1671000" />
+      <workItem from="1506406745053" duration="578000" />
+      <workItem from="1506407336988" duration="6862000" />
+      <workItem from="1506419329746" duration="1277000" />
+      <workItem from="1506422518937" duration="340000" />
+      <workItem from="1506422879020" duration="1082000" />
+      <workItem from="1506583792347" duration="9509000" />
+      <workItem from="1506876369020" duration="5274000" />
+      <workItem from="1506920780951" duration="2666000" />
+      <workItem from="1506926161257" duration="6692000" />
+      <workItem from="1506938654986" duration="1474000" />
+      <workItem from="1506950557343" duration="905000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="59104000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5020877" order="16" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32769555" sideWeight="0.496875" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39852008" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.503125" order="22" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Controllers/MetingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1506951307372" expanded="false" signature="6:181" ph="..." />
+            <marker date="1506951307372" expanded="true" signature="218:3604" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="299:3602" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="543:703" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="889:977" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1042:1485" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1137:1290" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1547:1809" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1874:2480" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2207:2366" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2551:2662" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2729:2854" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2925:3106" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3175:3266" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3345:3483" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3530:3596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/HttpHeader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <marker date="1506951418350" expanded="false" signature="6:95" ph="..." />
+            <marker date="1506951418350" expanded="true" signature="125:2725" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="155:2723" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="409:516" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="560:814" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="857:936" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1001:2353" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1500:1571" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1587:2143" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1730:2129" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1882:2111" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2175:2343" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2408:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Token.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Meting.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/MetingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1506951307372" expanded="false" signature="6:181" ph="..." />
+            <marker date="1506951307372" expanded="true" signature="218:3604" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="299:3602" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="543:703" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="889:977" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1042:1485" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1137:1290" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1547:1809" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1874:2480" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2207:2366" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2551:2662" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2729:2854" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2925:3106" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3175:3266" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3345:3483" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3530:3596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/HttpHeader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <marker date="1506951418350" expanded="false" signature="6:95" ph="..." />
+            <marker date="1506951418350" expanded="true" signature="125:2725" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="155:2723" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="409:516" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="560:814" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="857:936" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1001:2353" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1500:1571" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1587:2143" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1730:2129" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1882:2111" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2175:2343" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2408:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Token.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Meting.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/MetingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding>
+            <marker date="1506951307372" expanded="false" signature="6:181" ph="..." />
+            <marker date="1506951307372" expanded="true" signature="218:3604" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="299:3602" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="543:703" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="889:977" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1042:1485" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1137:1290" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1547:1809" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1874:2480" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2207:2366" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2551:2662" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2729:2854" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2925:3106" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3175:3266" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3345:3483" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3530:3596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Meting.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/HttpHeader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+          <folding>
+            <marker date="1506951418350" expanded="false" signature="6:95" ph="..." />
+            <marker date="1506951418350" expanded="true" signature="125:2725" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="155:2723" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="409:516" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="560:814" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="857:936" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1001:2353" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1500:1571" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1587:2143" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1730:2129" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1882:2111" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2175:2343" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2408:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/MetingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding>
+            <marker date="1506951307372" expanded="false" signature="6:181" ph="..." />
+            <marker date="1506951307372" expanded="true" signature="218:3604" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="299:3602" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="543:703" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="889:977" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1042:1485" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1137:1290" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1547:1809" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1874:2480" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2207:2366" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2551:2662" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2729:2854" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2925:3106" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3175:3266" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3345:3483" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3530:3596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Meting.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/HttpHeader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="53" column="12" lean-forward="true" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+          <folding>
+            <marker date="1506951418350" expanded="false" signature="6:95" ph="..." />
+            <marker date="1506951418350" expanded="true" signature="125:2725" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="155:2723" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="409:516" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="560:814" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="857:936" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1001:2353" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1500:1571" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1587:2143" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1730:2129" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1882:2111" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2175:2343" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2408:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/MetingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="55" column="12" lean-forward="false" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <folding>
+            <marker date="1506951307372" expanded="false" signature="6:181" ph="..." />
+            <marker date="1506951307372" expanded="true" signature="218:3604" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="299:3602" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="543:703" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="889:977" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1042:1485" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1137:1290" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1547:1809" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1874:2480" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2207:2366" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2551:2662" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2729:2854" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2925:3106" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3175:3266" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3345:3483" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3530:3596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Meting.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/HttpHeader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="110" column="164" lean-forward="false" selection-start-line="110" selection-start-column="164" selection-end-line="110" selection-end-column="164" />
+          <folding>
+            <marker date="1506951418350" expanded="false" signature="6:95" ph="..." />
+            <marker date="1506951418350" expanded="true" signature="125:2725" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="155:2723" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="409:516" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="560:814" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="857:936" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1001:2353" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1500:1571" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1587:2143" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1730:2129" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1882:2111" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2175:2343" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2408:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/MetingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1506951307372" expanded="false" signature="6:181" ph="..." />
+            <marker date="1506951307372" expanded="true" signature="218:3604" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="299:3602" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="543:703" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="889:977" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1042:1485" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1137:1290" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1547:1809" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1874:2480" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2207:2366" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2551:2662" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2729:2854" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2925:3106" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3175:3266" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3345:3483" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3530:3596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Context/WeerstationContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="16" column="1" lean-forward="false" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/MetingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1506951307372" expanded="false" signature="6:181" ph="..." />
+            <marker date="1506951307372" expanded="true" signature="218:3604" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="299:3602" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="543:703" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="889:977" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1042:1485" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1137:1290" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1547:1809" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1874:2480" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2207:2366" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2551:2662" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2729:2854" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2925:3106" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3175:3266" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3345:3483" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3530:3596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/exampleWebAPI.runtimeconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/exampleWebAPI.deps.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92513">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/desktop.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Token.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Meting.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/Weerstation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controllers/MetingController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="81" column="20" lean-forward="false" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
+          <folding>
+            <marker date="1506951307372" expanded="false" signature="6:181" ph="..." />
+            <marker date="1506951307372" expanded="true" signature="218:3604" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="299:3602" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="543:703" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="889:977" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1042:1485" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1137:1290" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1547:1809" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="1874:2480" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2207:2366" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2551:2662" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2729:2854" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="2925:3106" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3175:3266" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3345:3483" ph="{...}" />
+            <marker date="1506951307372" expanded="true" signature="3530:3596" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/ResetToken.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="149" column="33" lean-forward="false" selection-start-line="149" selection-start-column="33" selection-end-line="149" selection-end-column="33" />
+          <folding>
+            <marker date="1506951369378" expanded="true" signature="6:249" ph="..." />
+            <marker date="1506951369378" expanded="true" signature="279:6548" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="309:6546" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="642:711" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="769:1852" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="1053:1147" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="1497:1642" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="1674:1842" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="1902:3705" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="2351:2624" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="2831:3500" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="3153:3277" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="3532:3670" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="3765:5504" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="3960:5255" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="4169:5241" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="4321:5223" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="4759:4973" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="5287:5494" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="5558:6540" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="5796:6037" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="6122:6331" ph="{...}" />
+            <marker date="1506951369378" expanded="true" signature="6363:6530" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/MyCookie.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <marker date="1506941155755" expanded="true" signature="76:216" ph="{...}" />
+            <marker date="1506941155755" expanded="true" signature="104:214" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Context/WeerstationContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1506943610925" expanded="false" signature="6:50" ph="..." />
+            <marker date="1506943610925" expanded="true" signature="83:955" ph="{...}" />
+            <marker date="1506943610925" expanded="true" signature="133:953" ph="{...}" />
+            <marker date="1506943610925" expanded="true" signature="519:737" ph="{...}" />
+            <marker date="1506943610925" expanded="true" signature="746:947" ph="/* protected override void OnModelCreating(ModelBuilder modelBuilder) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Models/User.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <marker date="1506951372108" expanded="false" signature="6:130" ph="..." />
+            <marker date="1506951372108" expanded="true" signature="162:799" ph="{...}" />
+            <marker date="1506951372108" expanded="true" signature="186:797" ph="{...}" />
+            <marker date="1506951372108" expanded="true" signature="243:367" ph="{...}" />
+            <marker date="1506951372108" expanded="true" signature="390:410" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/HttpHeader.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-487">
+          <caret line="14" column="2" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+          <folding>
+            <marker date="1506951418350" expanded="false" signature="6:95" ph="..." />
+            <marker date="1506951418350" expanded="true" signature="125:2725" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="155:2723" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="409:516" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="560:814" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="857:936" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1001:2353" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1500:1571" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1587:2143" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1730:2129" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="1882:2111" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2175:2343" ph="{...}" />
+            <marker date="1506951418350" expanded="true" signature="2408:2717" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

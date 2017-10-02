@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Controllers"
   ],
-  "SelectedNode": "\\weerstationGateway.sln",
+  "SelectedNode": "\\Controllers\\MetingController.cs",
   "PreviewInSolutionExplorer": false
 }

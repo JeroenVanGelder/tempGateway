@@ -8,10 +8,11 @@ namespace exampleWebAPI.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id { get; set; }
-        public string Weatherstation { get; set; }
+        public int Id { get; set; }
+
         public DateTime Timestamp { get; set; }
         public double Temperature { get; set; }
         public double Illuminance { get; set; }
+        public Weerstation Weatherstation { get; set; }
     }
 }

@@ -1,9 +1,11 @@
 using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Newtonsoft.Json.Linq;
 
-namespace exampleWebAPI.Util
+namespace exampleWebAPI.Models
 {
-    public  class Token
+    public class Token
     {
         public Token(string asFormattedString)
         {
@@ -12,17 +14,6 @@ namespace exampleWebAPI.Util
             AccessToken = (string) token["access_token"];
             TokenType = (string) token["token_type"];
             UserName = (string) token["userName"];
-
-            //Tue, 26 Sep 2017 07:18:55 GMT
-//        public string Pattern { get; } = " ddd, dd MMM yyyy HH':'mm':'ss 'GMT'";
-//
-//            var convertedDate = DateTime.Parse(token[".issued"].ToString());
-//            Console.WriteLine("Converted {0} to {1} time {2}",
-//                token[".issued"].ToString(),
-//                convertedDate.Kind.ToString(),
-//                convertedDate);
-//
-
             ExpiresIn = (int) token["expires_in"];
             Issued = DateTime.Parse(token[".issued"].ToString());
             Expires = DateTime.Parse(token[".expires"].ToString());
@@ -31,33 +22,27 @@ namespace exampleWebAPI.Util
         public Token()
         {
             AccessToken = ":( :(";
-            TokenType = "China";
+            TokenType = "Bearer";
             ExpiresIn = 7198;
             UserName = "arneTest";
             Issued = DateTime.Now.AddDays(-1);
             Expires = DateTime.Now.AddDays(-1);
         }
 
-        public string AccessToken { get; }
-        public string TokenType { get; }
-        private int ExpiresIn { get; }
-        private string UserName { get; }
-        private DateTime Issued { get; }
-        private DateTime Expires { get; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
-        public override string ToString()
-        {
-            return "" + AccessToken + " "
-                   + TokenType + " "
-                   + ExpiresIn + " "
-                   + ExpiresIn + " "
-                   + UserName + " "
-                   + Issued + " "
-                   + Expires;
-        }
+        public string AccessToken { get; set; }
+        public string TokenType { get; set; }
+        public int ExpiresIn { get; set; }
+        public string UserName { get; set; }
+        public DateTime Issued { get; set; }
+        public DateTime Expires { get; set; }
 
         public bool IsValid()
         {
+      
             return Expires > DateTime.Now;
         }
 

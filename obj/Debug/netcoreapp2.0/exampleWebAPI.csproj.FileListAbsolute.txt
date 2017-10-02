@@ -395,3 +395,14 @@ C:\Users\ArneHe\Source\Repos\tempGateway\bin\Debug\netcoreapp2.0\refs\System.Xml
 C:\Users\ArneHe\Source\Repos\tempGateway\bin\Debug\netcoreapp2.0\refs\System.Xml.XPath.dll
 C:\Users\ArneHe\Source\Repos\tempGateway\bin\Debug\netcoreapp2.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\ArneHe\Source\Repos\tempGateway\bin\Debug\netcoreapp2.0\refs\WindowsBase.dll
+C:\Users\ArneHe\RiderProjects\tempGateway\bin\Debug\netcoreapp2.0\exampleWebAPI.deps.json
+C:\Users\ArneHe\RiderProjects\tempGateway\bin\Debug\netcoreapp2.0\exampleWebAPI.runtimeconfig.json
+C:\Users\ArneHe\RiderProjects\tempGateway\bin\Debug\netcoreapp2.0\exampleWebAPI.runtimeconfig.dev.json
+C:\Users\ArneHe\RiderProjects\tempGateway\bin\Debug\netcoreapp2.0\exampleWebAPI.dll
+C:\Users\ArneHe\RiderProjects\tempGateway\bin\Debug\netcoreapp2.0\exampleWebAPI.pdb
+C:\Users\ArneHe\RiderProjects\tempGateway\obj\Debug\netcoreapp2.0\exampleWebAPI.csprojResolveAssemblyReference.cache
+C:\Users\ArneHe\RiderProjects\tempGateway\obj\Debug\netcoreapp2.0\exampleWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\ArneHe\RiderProjects\tempGateway\obj\Debug\netcoreapp2.0\exampleWebAPI.AssemblyInfoInputs.cache
+C:\Users\ArneHe\RiderProjects\tempGateway\obj\Debug\netcoreapp2.0\exampleWebAPI.AssemblyInfo.cs
+C:\Users\ArneHe\RiderProjects\tempGateway\obj\Debug\netcoreapp2.0\exampleWebAPI.dll
+C:\Users\ArneHe\RiderProjects\tempGateway\obj\Debug\netcoreapp2.0\exampleWebAPI.pdb

@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "/home/jeroenvangelder/workspace/IOT-I/dotnet/weerstationGateway/exampleWebAPI.csproj",
+    "projectUniqueName": "C:\\Users\\ArneHe\\RiderProjects\\tempGateway\\exampleWebAPI.csproj",
     "projectName": "exampleWebAPI",
-    "projectPath": "/home/jeroenvangelder/workspace/IOT-I/dotnet/weerstationGateway/exampleWebAPI.csproj",
-    "outputPath": "/home/jeroenvangelder/workspace/IOT-I/dotnet/weerstationGateway/obj/",
+    "projectPath": "C:\\Users\\ArneHe\\RiderProjects\\tempGateway\\exampleWebAPI.csproj",
+    "outputPath": "C:\\Users\\ArneHe\\RiderProjects\\tempGateway\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp2.0"
