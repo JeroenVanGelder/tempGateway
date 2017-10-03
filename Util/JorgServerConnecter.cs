@@ -21,20 +21,30 @@ namespace exampleWebAPI.Util
             {"username","jeroen.vangelder@student.han.nl"},
             {"password","4Cmw9Rkx!"}
         });
-
-        private int timezoneFromGMT = 2;
+        
+        public JorgServerConnecter(){}
 
         public JorgServerConnecter(JorgToken token)
         {
-            if (token.checkIfValid())
-            {
-                this.jorgToken = token;
-            }
-            else
-            {
-                this.jorgToken = getNewToken().Result;
-            }
+            this.jorgToken = token.checkIfValid() ? token : UpdateToken().Result;
         }
+        
+        [Obsolete("Shouldn't Back Call",false)]
+        
+        public async Task<JorgToken> UpdateToken()
+        {
+            var client = new HttpClient {BaseAddress = new Uri("http://iot.jorgvisch.nl/")};
+            HttpResponseMessage response = await client.PostAsync("Token", wwwEncoded);
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                var responseToken = await response.Content.ReadAsStringAsync();
+                jorgToken = JsonConvert.DeserializeObject<JorgToken>(responseToken);
+            }
+
+            
+            return jorgToken;
+        } 
 
         public async Task<string> postMeting(Meting meting)
         {
@@ -51,20 +61,6 @@ namespace exampleWebAPI.Util
             HttpResponseMessage response = await client.PostAsync("api/Weather", stringContent);
             
             return response.StatusCode.ToString();
-        }
-
-        public async Task<JorgToken> getNewToken()
-        {
-            var client = new HttpClient {BaseAddress = new Uri("http://iot.jorgvisch.nl/")};
-            HttpResponseMessage response = await client.PostAsync("Token", wwwEncoded);
-
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                var responseToken = await response.Content.ReadAsStringAsync();
-                jorgToken = JsonConvert.DeserializeObject<JorgToken>(responseToken);
-            }
-            
-            return jorgToken;
-        }   
+        }  
     }
 }

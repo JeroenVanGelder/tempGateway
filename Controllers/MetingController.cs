@@ -12,10 +12,12 @@ namespace exampleWebAPI.Controllers
     public class MetingController : Controller
     {
         private readonly MetingContext _context;
-
+        private JorgServerController _jorgServerController;
+        
         public MetingController(MetingContext context)
         {
             _context = context;
+            _jorgServerController = new JorgServerController(_context);
         }
         
         // GET
@@ -33,12 +35,17 @@ namespace exampleWebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody]Meting value)
+        public String Post([FromBody]Meting value)
         {
+            [FromBody]
             value.Timestamp=DateTime.Now;
             _context.MetingItems.Add(value);
             _context.SaveChanges();
-            return StatusCode(201, value);
+            
+            
+            
+            var statusCode = _jorgServerController.PostMetingToJorgServer(value);
+            return statusCode;
         }
     }
 }

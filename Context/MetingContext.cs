@@ -1,5 +1,7 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
+using exampleWebAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
@@ -27,6 +29,11 @@ namespace exampleWebAPI.Context
             Console.WriteLine($"{Configuration.GetConnectionString("MetingDatabase")}");
             
             optionsBuilder.UseMySql($"{Configuration.GetConnectionString("MetingDatabase")}");
+        }
+
+        public JorgToken GetLastJorgToken()
+        {
+            return JorgTokenItems.Last();
         }
     }
 }
