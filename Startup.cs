@@ -37,9 +37,11 @@ namespace exampleWebAPI
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
-            }
 
+                app.UseDeveloperExceptionPage();
+                
+            }
+            app.UseStaticFiles();
             app.UseMvc();
         }
     }

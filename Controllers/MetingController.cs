@@ -5,6 +5,7 @@ using exampleWebAPI.Context;
 using exampleWebAPI.Models;
 using exampleWebAPI.Util;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace exampleWebAPI.Controllers
 {
@@ -25,11 +26,20 @@ namespace exampleWebAPI.Controllers
             _header = new HttpHeader();
         }
 
-        [HttpGet]
-        public IEnumerable<Meting> Get()
+        public IActionResult Index()
         {
-            return _context.Meting.ToList();
+            return View();
         }
+
+
+
+
+
+                [HttpGet("/all")]
+                public IEnumerable<Meting> Get()
+                {
+                    return _context.Meting.ToList(); 
+                }
 
         [HttpGet("{id}")]
         public Meting Get(int id)
@@ -112,6 +122,10 @@ namespace exampleWebAPI.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] Meting value)
         {
+            if (value == null)
+            {
+                return StatusCode(400, "fout ");
+            }
             _context.Meting.Add(value);
             SendToJorg(value);
             return StatusCode(201, "Created");

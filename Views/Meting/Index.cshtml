@@ -1,0 +1,50 @@
+﻿<body>
+	<script src="~/js/jquery-3.2.1.min.js"></script>
+	<script src="~/js/Chart.js"></script>
+
+	<canvas id="myChart" width="400" height="400"></canvas>
+	<script>
+
+			// Add a helper to format timestamp data
+			Date.prototype.formatMMDDYYYY = function () {
+				return (this.getMonth() + 1) +
+					"/" + this.getDate() +
+					"/" + this.getFullYear();
+			};
+
+			$.getJSON("/all", function (result) {
+				var labels = [], data = [];
+
+				for (var i = 0; i < result.length; i++) {
+					labels.push(result[i].id);
+					data.push(result[i].temperature);
+					console.log(result[i]);
+				}
+
+				var ctx = document.getElementById("myChart").getContext("2d");
+				var myChart = new Chart(ctx, {
+					type: 'bar',
+					data: {
+						labels: labels,
+						datasets: [
+							{
+								label: "All Metingen",
+								fillColor: "rgba(220,220,220,0.2)",
+								strokeColor: "rgba(220,220,220,1)",
+								pointColor: "rgba(220,220,220,1)",
+								pointStrokeColor: "#fff",
+								pointHighlightFill: "#fff",
+								pointHighlightStroke: "rgba(220,220,220,1)",
+								data: data
+							}
+						]
+					}
+				});
+			});
+	</script>
+
+
+
+
+
+</body>
