@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using exampleWebAPI.Context;
+using exampleWebAPI.Controllers;
+using exampleWebAPI.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -37,9 +39,7 @@ namespace exampleWebAPI
         {
             if (env.IsDevelopment())
             {
-
                 app.UseDeveloperExceptionPage();
-                
             }
             app.UseStaticFiles();
             app.UseMvc();

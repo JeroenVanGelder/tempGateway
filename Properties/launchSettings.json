@@ -21,7 +21,7 @@
       "applicationUrl": "http://localhost/arne"
     },
     "exampleWebAPI": {
-      "commandName": "Project",
+      "commandName": "IIS",
       "launchBrowser": true,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

@@ -2,7 +2,7 @@
 -pidFile C:\Users\ArneHe\RiderProjects\tempGateway\bin\IISSupport\pidfile.txt
 -wd C:\Users\ArneHe\RiderProjects\tempGateway
 -a exec "C:\Users\ArneHe\RiderProjects\tempGateway\bin\Debug\netcoreapp2.0\exampleWebAPI.dll"
--pipe 4314debc-9f67-4fae-be95-0ef674157584
+-pipe eee1c89a-2388-4922-905c-698b8b6597fc
 -pr exampleWebAPI
--owningPid 1040
+-owningPid 25084
 -env ASPNETCORE_CONTENTROOT=C:\Users\ArneHe\RiderProjects\tempGateway|ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=Microsoft.AspNetCore.ApplicationInsights.HostingStartup|ASPNETCORE_ENVIRONMENT=Development|COMPLUS_ForceENC=1|
