@@ -12,7 +12,7 @@ namespace exampleWebAPI.Util
         private const string WeatherUrl = "/api/Weather";
         private readonly ResetToken _resetToken = new ResetToken();
 
-  
+
         public bool SendMeting(Meting value, User user)
         {
             var b = CheckToken(user);
@@ -44,9 +44,8 @@ namespace exampleWebAPI.Util
 
             using (var webStream = request.GetRequestStream())
             using (var requestWriter = new StreamWriter(webStream, Encoding.ASCII))
-            {
                 requestWriter.Write(json);
-            }
+
             try
             {
                 var webResponse = request.GetResponse();
@@ -57,7 +56,7 @@ namespace exampleWebAPI.Util
                     {
                         var response = responseReader.ReadToEnd();
                         Console.Out.WriteLine(response);
-                       
+
                         return true;
                     }
                 }

@@ -19,14 +19,15 @@ namespace exampleWebAPI.Controllers
         private User _user;
         private List<Weerstation> _weerstations;
 
-        public MetingController(WeerstationContext context)
+        public MetingController()
         {
             _weerstations = new List<Weerstation>();
             _resetToken = new ResetToken();
-            _context = context;
+            _context = new WeerstationContext();
             CreateDb();
             _header = new HttpHeader();
         }
+
 
         [HttpGet("/graph")]
         public IActionResult Index()
@@ -53,11 +54,13 @@ namespace exampleWebAPI.Controllers
             return _weerstations.ToList();
         }
 
+
         [HttpGet("{id}")]
         public Meting Get(int id)
         {
             return _context.Meting.FirstOrDefault(x => x.Id == id);
         }
+
 
         [HttpGet("/CreateDB")]
         public string CreateDb()
@@ -87,7 +90,7 @@ namespace exampleWebAPI.Controllers
         [HttpGet("/fakeData")]
         public string FakeData()
         {
-         //   TokenValid();
+            //   TokenValid();
             var ws = _context.Weerstation.Any(weerstation => weerstation.Id == 1)
                 ? _context.Weerstation.First(ws1 => ws1.Id == 1)
                 : new Weerstation("192.168.137.3", "arne1");
@@ -102,7 +105,7 @@ namespace exampleWebAPI.Controllers
             _context.Meting.Add(m);
             _context.SaveChanges();
             return "oke";
-//            return !_header.SendMeting(m, _user) ? "fout" : "ok";
+            //            return !_header.SendMeting(m, _user) ? "fout" : "ok";
         }
 
         [HttpGet("/isTokenValid")]
@@ -133,7 +136,7 @@ namespace exampleWebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Meting value)
+        public IActionResult Post([FromBody] Meting value, Weerstation ws)
         {
             if (value == null)
                 return StatusCode(417, "Meting is null");
@@ -164,12 +167,13 @@ namespace exampleWebAPI.Controllers
 
         private Weerstation NewWeatherStation()
         {
-            var ws = new Weerstation {Name = RandomNameGenerator().ToString()};
+            var ws = new Weerstation {Name = RandomNameGenerator()};
             _context.Weerstation.Add(ws);
             _context.SaveChanges();
             ws.IpAddress = "10.42.0." + (ws.Id + 1);
             _context.Weerstation.Update(ws);
             _context.SaveChanges();
+            _weerstations.Add(ws);
             return ws;
         }
 
@@ -188,6 +192,7 @@ namespace exampleWebAPI.Controllers
         private Weerstation IsPresentInDb(Weerstation weerstation)
         {
             var ws = _context.Weerstation.FirstOrDefault(weerstation1 => weerstation1.Id == weerstation.Id);
+            if (ws == null) return null;
             _weerstations.Add(ws);
             return ws;
         }
