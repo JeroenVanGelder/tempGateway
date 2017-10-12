@@ -17,11 +17,9 @@ namespace exampleWebAPI.Controllers
 
 
         private User _user;
-        private List<Weerstation> _weerstations;
 
         public MetingController()
         {
-            _weerstations = new List<Weerstation>();
             _resetToken = new ResetToken();
             _context = new WeerstationContext();
             CreateDb();
@@ -46,12 +44,6 @@ namespace exampleWebAPI.Controllers
         public IEnumerable<Weerstation> GetWs()
         {
             return _context.Weerstation.ToList();
-        }
-
-        [HttpGet("/getAllCurrentWs")]
-        public IEnumerable<Weerstation> GetWsCurrent()
-        {
-            return _weerstations.ToList();
         }
 
 
@@ -156,10 +148,8 @@ namespace exampleWebAPI.Controllers
         {
             if (weerstation.Id == 0)
                 return new JsonResult(StatusCode(201, NewWeatherStation()));
-            var ws = IsCurrentPresent(weerstation);
-            if (ws != null)
-                return new JsonResult(StatusCode(202, ws));
-            ws = IsPresentInDb(weerstation);
+
+            var ws = IsPresentInDb(weerstation);
             return ws != null
                 ? new JsonResult(StatusCode(202, Json(ws)))
                 : new JsonResult(StatusCode(201, Json(NewWeatherStation())));
@@ -167,13 +157,12 @@ namespace exampleWebAPI.Controllers
 
         private Weerstation NewWeatherStation()
         {
-            var ws = new Weerstation {Name = RandomNameGenerator()};
+            var ws = new Weerstation { Name = RandomNameGenerator() };
             _context.Weerstation.Add(ws);
             _context.SaveChanges();
             ws.IpAddress = "10.42.0." + (ws.Id + 1);
             _context.Weerstation.Update(ws);
             _context.SaveChanges();
-            _weerstations.Add(ws);
             return ws;
         }
 
@@ -193,15 +182,9 @@ namespace exampleWebAPI.Controllers
         {
             var ws = _context.Weerstation.FirstOrDefault(weerstation1 => weerstation1.Id == weerstation.Id);
             if (ws == null) return null;
-            _weerstations.Add(ws);
             return ws;
         }
 
-        private Weerstation IsCurrentPresent(Weerstation weerstation)
-        {
-            return _weerstations.Any(weerstation1 => weerstation1.Id == weerstation.Id)
-                ? IsPresentInDb(weerstation)
-                : null;
-        }
+
     }
 }
