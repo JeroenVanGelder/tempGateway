@@ -4,37 +4,25 @@ using System.Net;
 using System.Text;
 using exampleWebAPI.Models;
 
-namespace exampleWebAPI.Util
+namespace exampleWebAPI.Context
 {
-    public class HttpHeader
+    public class HttpContext
     {
         private const string Url = "http://iot.jorgvisch.nl";
         private const string WeatherUrl = "/api/Weather";
-        private readonly ResetToken _resetToken = new ResetToken();
+        private readonly TokenContext _tokenContext = new TokenContext();
 
+    
 
         public bool SendMeting(Meting value, User user)
         {
-            var b = CheckToken(user);
+            var b = _tokenContext.CheckToken(user, this);
             return b && SendObject(value, user);
         }
 
-        private bool CheckToken(User user)
+        private  bool SendObject(Meting value, User user)
         {
-            if (user.Token != null && user.Token.IsValid()) return true;
-            if (ResetToken(user))
-                user.Token = _resetToken.GetToken(user).Result;
-            return user.Token != null && user.Token.IsValid();
-        }
-
-        public bool ResetToken(User user)
-        {
-            return _resetToken.ResetTokenNow(user).Result;
-        }
-
-        private static bool SendObject(Meting value, User user)
-        {
-            var json = ParseJson(value);
+            var json = ParseMetingToJson(value);
 
             var request = (HttpWebRequest) WebRequest.Create(Url + WeatherUrl);
             request.Method = "POST";
@@ -69,7 +57,7 @@ namespace exampleWebAPI.Util
             }
         }
 
-        private static string ParseJson(Meting value)
+        private string ParseMetingToJson(Meting value)
         {
             return
                 "{\"Weatherstation\":\"" + value.Weatherstation.Name + "\"," +

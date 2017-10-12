@@ -6,12 +6,11 @@ using System.Net;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using exampleWebAPI.Context;
 using exampleWebAPI.Models;
 
-namespace exampleWebAPI.Util
+namespace exampleWebAPI.Context
 {
-    public class ResetToken
+    public class TokenContext
     {
         private readonly WeerstationContext _context;
 
@@ -20,7 +19,7 @@ namespace exampleWebAPI.Util
         private const string ResetTokenUrl = "Manage/ResetTokenRequest";
         private const string TokenUrl = "/Token";
 
-        public ResetToken()
+        public TokenContext()
         {
             _context = new WeerstationContext();
         }
@@ -170,6 +169,14 @@ namespace exampleWebAPI.Util
                 Console.Out.WriteLine(e.Message);
                 return null;
             }
+        }
+
+        public bool CheckToken(User user, HttpContext httpContext)
+        {
+            if (user.Token != null && user.Token.IsValid()) return true;
+            if (ResetTokenNow(user).Result)
+                user.Token = GetToken(user).Result;
+            return user.Token != null && user.Token.IsValid();
         }
     }
 }

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using exampleWebAPI.Context;
 using exampleWebAPI.Models;
-using exampleWebAPI.Util;
 using Microsoft.AspNetCore.Mvc;
 
 namespace exampleWebAPI.Controllers
@@ -12,18 +11,18 @@ namespace exampleWebAPI.Controllers
     public class MetingController : Controller
     {
         private readonly WeerstationContext _context;
-        private readonly ResetToken _resetToken;
-        private readonly HttpHeader _header;
+        private readonly TokenContext _tokenContext;
+        private readonly HttpContext _httpContext;
 
 
         private User _user;
 
         public MetingController()
         {
-            _resetToken = new ResetToken();
+            _tokenContext = new TokenContext();
             _context = new WeerstationContext();
             CreateDb();
-            _header = new HttpHeader();
+            _httpContext = new HttpContext();
         }
 
 
@@ -72,10 +71,10 @@ namespace exampleWebAPI.Controllers
         [HttpGet("/token")]
         public Token GetToken()
         {
-            var token = _resetToken.GetToken(_user).Result;
+            var token = _tokenContext.GetToken(_user).Result;
             if (token != null) return token;
-            if (_resetToken.ResetTokenNow(_user).Result)
-                token = _resetToken.GetToken(_user).Result;
+            if (_tokenContext.ResetTokenNow(_user).Result)
+                token = _tokenContext.GetToken(_user).Result;
             return token;
         }
 
@@ -110,26 +109,27 @@ namespace exampleWebAPI.Controllers
         [HttpGet("/mockLogin")]
         public string MockLogin()
         {
-            _user = _resetToken.Login(_user).Result;
+            _user = _tokenContext.Login(_user).Result;
             return _user.Cookies.ElementAt(1).Name;
         }
 
         [HttpGet("/GetVerToken")]
         public string GetVerToken()
         {
-            _user = _resetToken.GetRequestVerificationToken(_user);
+            _user = _tokenContext.GetRequestVerificationToken(_user);
             return _user.Cookies.ElementAt(0).Name + " " + _user.Cookies.ElementAt(0).Value;
         }
 
         [HttpGet("/resetToken")]
         public string ResetToken()
         {
-            return _resetToken.ResetTokenNow(_user).Result.ToString();
+            return _tokenContext.ResetTokenNow(_user).Result.ToString();
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] Meting value, Weerstation ws)
+        public IActionResult Post([FromBody] Meting value)
         {
+            
             if (value == null)
                 return StatusCode(417, "Meting is null");
             _context.Meting.Add(value);
@@ -139,7 +139,7 @@ namespace exampleWebAPI.Controllers
 
         private void SendToJorg(Meting value)
         {
-            _header.SendMeting(value, _user);
+            _httpContext.SendMeting(value, _user);
         }
 
         [HttpPost]
@@ -157,7 +157,7 @@ namespace exampleWebAPI.Controllers
 
         private Weerstation NewWeatherStation()
         {
-            var ws = new Weerstation { Name = RandomNameGenerator() };
+            var ws = new Weerstation {Name = RandomNameGenerator()};
             _context.Weerstation.Add(ws);
             _context.SaveChanges();
             ws.IpAddress = "10.42.0." + (ws.Id + 1);
@@ -184,7 +184,5 @@ namespace exampleWebAPI.Controllers
             if (ws == null) return null;
             return ws;
         }
-
-
     }
 }
