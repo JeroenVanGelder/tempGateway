@@ -1,5 +1,8 @@
 ﻿using System;
+using System.IO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration; 
+
 
 namespace exampleWebAPI.Context
 {
@@ -11,11 +14,23 @@ namespace exampleWebAPI.Context
         public DbSet<Models.User> User { get; set; }
         public DbSet<Models.MyCookie> MyCookies{ get; set; }
 
+        public static IConfigurationRoot Configuration { get; set; } 
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            const string ipAddress = "localhost";
-            Console.WriteLine("ip: " + ipAddress);
-            optionsBuilder.UseMySql(@"Server=" + ipAddress + ";database=Weerstation;uid=root;");
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json");
+
+            Configuration = builder.Build();
+            
+            Console.WriteLine("Home Directory:" + Directory.GetCurrentDirectory());
+            Console.Write("Database String:");
+            Console.WriteLine($"{Configuration.GetConnectionString("MetingDatabase")}");
+            
+            optionsBuilder.UseMySql($"{Configuration.GetConnectionString("MetingDatabase")}");
+
+ 
         }
         /*
         protected override void OnModelCreating(ModelBuilder modelBuilder)
