@@ -4,6 +4,7 @@ using System.Linq;
 using exampleWebAPI.Context;
 using exampleWebAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace exampleWebAPI.Controllers
 {
@@ -129,7 +130,6 @@ namespace exampleWebAPI.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] Meting value)
         {
-            
             if (value == null)
                 return StatusCode(417, "Meting is null");
             _context.Meting.Add(value);
@@ -144,15 +144,30 @@ namespace exampleWebAPI.Controllers
 
         [HttpPost]
         [Route("/signIn")]
-        public JsonResult SignIn([FromBody] Weerstation weerstation)
+        public ActionResult SignIn([FromBody] Weerstation weerstation)
         {
             if (weerstation.Id == 0)
-                return new JsonResult(StatusCode(201, NewWeatherStation()));
+                return Created("uri", ParseWeerstationToJson(NewWeatherStation()));
+
 
             var ws = IsPresentInDb(weerstation);
-            return ws != null
-                ? new JsonResult(StatusCode(202, Json(ws)))
-                : new JsonResult(StatusCode(201, Json(NewWeatherStation())));
+
+            if (ws != null)
+            {
+                var parseWeatherStationExisting = ParseWeerstationToJson(ws);
+                Response.ContentLength = parseWeatherStationExisting.Length;
+                return Ok(parseWeatherStationExisting);
+            }
+
+            var parseWeatherStation = ParseWeerstationToJson(NewWeatherStation());
+            Response.ContentLength = parseWeatherStation.Length;
+            return Created("URI", parseWeatherStation);
+        }
+
+        private static string ParseWeerstationToJson(Weerstation ws)
+        {
+            return JsonConvert.SerializeObject(ws, Formatting.None,
+                new JsonSerializerSettings {ReferenceLoopHandling = ReferenceLoopHandling.Ignore});
         }
 
         private Weerstation NewWeatherStation()
