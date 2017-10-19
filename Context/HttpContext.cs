@@ -62,11 +62,13 @@ namespace exampleWebAPI.Context
         {
             const string format = "MM/dd/yyyy hh:mm:sszzz";
 
+
+
             return
                 "{\"Weatherstation\":\"" + value.Weatherstation.Name + "\"," +
                 "\"Timestamp\":\"" + value.Timestamp.ToString(format, CultureInfo.InvariantCulture) + "\", " +
-                "\"Temperature\":" + value.Temperature + ", " +
-                "\"Illuminance\": " + value.Illuminance + "}";
+                "\"Temperature\":" + decimal.Parse(value.Temperature.ToString(), new NumberFormatInfo() { NumberDecimalSeparator = "," }) + ", " +
+                "\"Illuminance\": " + decimal.Parse(value.Illuminance.ToString(), new NumberFormatInfo() { NumberDecimalSeparator = "," }) + "}";
         }
     }
 }
