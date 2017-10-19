@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using System.Text;
 using exampleWebAPI.Models;
+using System.Globalization;
 
 namespace exampleWebAPI.Context
 {
@@ -12,7 +13,7 @@ namespace exampleWebAPI.Context
         private const string WeatherUrl = "/api/Weather";
         private readonly TokenContext _tokenContext = new TokenContext();
 
-    
+
 
         public bool SendMeting(Meting value, User user)
         {
@@ -20,11 +21,11 @@ namespace exampleWebAPI.Context
             return b && SendObject(value, user);
         }
 
-        private  bool SendObject(Meting value, User user)
+        private bool SendObject(Meting value, User user)
         {
             var json = ParseMetingToJson(value);
 
-            var request = (HttpWebRequest) WebRequest.Create(Url + WeatherUrl);
+            var request = (HttpWebRequest)WebRequest.Create(Url + WeatherUrl);
             request.Method = "POST";
             request.ContentType = "application/json";
             request.Headers.Add("Authorization", user.Token.GetTokenString());
@@ -59,9 +60,11 @@ namespace exampleWebAPI.Context
 
         private string ParseMetingToJson(Meting value)
         {
+            const string format = "MM/dd/yyyy hh:mm:sszzz";
+
             return
                 "{\"Weatherstation\":\"" + value.Weatherstation.Name + "\"," +
-                "\"Timestamp\":\"" + value.Timestamp + "\", " +
+                "\"Timestamp\":\"" + value.Timestamp.ToString(format, CultureInfo.InvariantCulture) + "\", " +
                 "\"Temperature\":" + value.Temperature + ", " +
                 "\"Illuminance\": " + value.Illuminance + "}";
         }

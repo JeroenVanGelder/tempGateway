@@ -32,12 +32,5 @@ namespace exampleWebAPI.Context
 
  
         }
-        /*
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Models.User>()
-                .HasKey(c => new { c.Email});
-        }
-        */
     }
 }

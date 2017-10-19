@@ -28,7 +28,7 @@ namespace exampleWebAPI.Context
         {
             user = Login(user).Result;
 
-            var client = new HttpClient {BaseAddress = new Uri(Url)};
+            var client = new HttpClient { BaseAddress = new Uri(Url) };
             var request = new HttpRequestMessage(HttpMethod.Post, ResetTokenUrl);
 
 
@@ -60,7 +60,7 @@ namespace exampleWebAPI.Context
         {
             var cookies = new CookieContainer();
             var handler = new HttpClientHandler();
-            var client = new HttpClient(handler) {BaseAddress = new Uri(Url)};
+            var client = new HttpClient(handler) { BaseAddress = new Uri(Url) };
             handler.CookieContainer = cookies;
             var request = new HttpRequestMessage(HttpMethod.Post, LoginUrl);
 
@@ -91,6 +91,7 @@ namespace exampleWebAPI.Context
                 user.Cookies.Add(secondCookie);
                 user.Token = new Token(response.Content.ReadAsStringAsync().Result);
                 _context.User.Update(user);
+                _context.SaveChanges();
                 return user;
             }
             catch (Exception e)
@@ -103,7 +104,7 @@ namespace exampleWebAPI.Context
 
         public User GetRequestVerificationToken(User user)
         {
-            var request = (HttpWebRequest) WebRequest.Create(Url + LoginUrl);
+            var request = (HttpWebRequest)WebRequest.Create(Url + LoginUrl);
             request.Method = "GET";
             request.ContentType = "application/json";
 
@@ -130,10 +131,15 @@ namespace exampleWebAPI.Context
                             Name = request.CookieContainer.GetCookies(new Uri(Url))[0].Name,
                             Value = request.CookieContainer.GetCookies(new Uri(Url))[0].Value
                         };
-                        _context.MyCookies.Update(firstCookie);
-                        user.Cookies = new List<MyCookie> {firstCookie};
-                        _context.User.Update(user);
+                        user.Cookies = new List<MyCookie> { firstCookie };
+                        if (_context.MyCookies.Count(myC => myC.Name.Equals(firstCookie.Name)) > 0)
 
+                            _context.MyCookies.Update(firstCookie);
+                        else
+                            _context.MyCookies.Add(firstCookie);
+
+                        _context.User.Update(user);
+                        _context.SaveChanges();
                         return user;
                     }
                 }
@@ -148,7 +154,7 @@ namespace exampleWebAPI.Context
 
         public async Task<Token> GetToken(User user)
         {
-            var client = new HttpClient {BaseAddress = new Uri(Url)};
+            var client = new HttpClient { BaseAddress = new Uri(Url) };
             var request = new HttpRequestMessage(HttpMethod.Post, TokenUrl);
 
             var keyValues = new List<KeyValuePair<string, string>>
@@ -174,8 +180,18 @@ namespace exampleWebAPI.Context
         public bool CheckToken(User user, HttpContext httpContext)
         {
             if (user.Token != null && user.Token.IsValid()) return true;
-            if (ResetTokenNow(user).Result)
-                user.Token = GetToken(user).Result;
+            if (!ResetTokenNow(user).Result) return user.Token != null && user.Token.IsValid();
+            user.Token = GetToken(user).Result;
+            foreach (var mc in user.Cookies)
+            {
+                if (_context.MyCookies.Count(myC => myC.Name.Equals(mc.Name)) > 0)
+                    _context.MyCookies.Update(mc);
+                else
+                    _context.MyCookies.Add(mc);
+            }
+
+            _context.User.Update(user);
+            _context.SaveChanges();
             return user.Token != null && user.Token.IsValid();
         }
     }
