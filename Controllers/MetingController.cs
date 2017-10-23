@@ -4,6 +4,7 @@ using exampleWebAPI.Context;
 using exampleWebAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 
 namespace exampleWebAPI.Controllers
 {
@@ -37,28 +38,48 @@ namespace exampleWebAPI.Controllers
         [HttpGet("{id}")]
         public Meting Get(int id)
         {
-            return _context.Meting.Include(m=> m.Weatherstation).FirstOrDefault(x => x.Id == id);
+            return _context.Meting.Include(m => m.Weatherstation).FirstOrDefault(x => x.Id == id);
         }
 
 
         [HttpPost]
         public IActionResult Post([FromBody] Meting meting)
         {
-            /* @todo
-            aanpassen naar nette vorm zoals authcontrol signin()
-            */
             if (meting == null)
-                return StatusCode(417, "Meting is null");
+            {
+                var msg = "meting is null";
+                Response.ContentLength = msg.Length;
+                return BadRequest(msg);
+            }
+
             meting.Weatherstation =
                 _context.Weerstation.FirstOrDefault(ws => meting.Weatherstation.Id == ws.Id);
             _context.Meting.Add(meting);
             _context.SaveChanges();
-            return SendToJorg(meting) ? StatusCode(201, "Created") : StatusCode(400, "Bad Request");
+            if (SendToJorg(meting))
+            {
+                var metingJson = ParseMetingToJson(meting);
+                Response.ContentLength = metingJson.Length;
+                var newMetingUri = "/meting/" + meting.Id;
+                return Created(newMetingUri, metingJson);
+            }
+            else
+            {
+                var msg = "versturen mislukt";
+                Response.ContentLength = msg.Length;
+                return BadRequest(msg);
+            }
         }
 
         private bool SendToJorg(Meting value)
         {
             return _httpContext.SendMeting(value, _authenticationController.GetUser());
+        }
+
+        private static string ParseMetingToJson(Meting meting)
+        {
+            return JsonConvert.SerializeObject(meting, Formatting.None,
+                new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
         }
     }
 }
