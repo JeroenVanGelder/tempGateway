@@ -67,8 +67,8 @@ namespace exampleWebAPI.Context
             return
                 "{\"Weatherstation\":\"" + value.Weatherstation.Name + "\"," +
                 "\"Timestamp\":\"" + value.Timestamp.ToString(format, CultureInfo.InvariantCulture) + "\", " +
-                "\"Temperature\":" + decimal.Parse(value.Temperature.ToString(), new NumberFormatInfo() { NumberDecimalSeparator = "," }) + ", " +
-                "\"Illuminance\": " + decimal.Parse(value.Illuminance.ToString(), new NumberFormatInfo() { NumberDecimalSeparator = "," }) + "}";
+                "\"Temperature\":" + value.Temperature.ToString().Replace(",",".") + ", " +
+                "\"Illuminance\": " +value.Illuminance.ToString().Replace(",", ".") + "}";
         }
     }
 }

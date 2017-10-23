@@ -43,8 +43,13 @@ namespace exampleWebAPI.Controllers
         public ActionResult SignIn([FromBody] Weerstation weerstation)
         {
             if (weerstation == null || weerstation.Id == 0)
-                return Created("uri", ParseWeerstationToJson(NewWeatherStation()));
+            {
+                var parseNewWeatherStation = ParseWeerstationToJson(NewWeatherStation());
 
+                Response.ContentLength = parseNewWeatherStation.Length;
+
+                return Created("uri", parseNewWeatherStation);
+            }
             var ws = IsPresentInDb(weerstation);
 
             if (ws != null)
