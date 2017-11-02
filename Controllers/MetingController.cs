@@ -22,17 +22,13 @@ namespace exampleWebAPI.Controllers
             _httpContext = new HttpContext();
         }
 
-        [HttpGet("/graph")]
-        public IActionResult Index()
-        {
-            return View();
-        }
 
         [HttpGet]
         public List<Meting> Get()
         {
             return _context.Meting.Include(m => m.Weatherstation).ToListAsync().Result;
         }
+
 
 
         [HttpGet("{id}")]
@@ -81,5 +77,29 @@ namespace exampleWebAPI.Controllers
             return JsonConvert.SerializeObject(meting, Formatting.None,
                 new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
         }
+        [HttpOptions]
+        public ActionResult GetOptions()
+        {
+            Response.Headers.Add("Allow", "OPTIONS, GET, POST");
+
+            return Ok();
+        }
+
+
+
+
+        [HttpGet("/api/meting/graph")]
+        public IActionResult Index()
+        {
+            return View();
+        }
+        [HttpOptions("/api/meting/graph")]
+        public ActionResult GetOptionsGraph()
+        {
+            Response.Headers.Add("Allow", "OPTIONS, GET");
+
+            return Ok();
+        }
+
     }
 }

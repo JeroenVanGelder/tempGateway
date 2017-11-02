@@ -63,6 +63,13 @@ namespace exampleWebAPI.Controllers
             Response.ContentLength = parseWeatherStation.Length;
             return Created("URI", parseWeatherStation);
         }
+        [HttpOptions("/signIn")]
+        public ActionResult GetOptionsSignin()
+        {
+            Response.Headers.Add("Allow", "OPTIONS, POST");
+
+            return Ok();
+        }
 
         private static string ParseWeerstationToJson(Weerstation ws)
         {
@@ -107,6 +114,13 @@ namespace exampleWebAPI.Controllers
                 token = _tokenContext.GetToken(_user).Result;
             return token;
         }
+        [HttpOptions("/token")]
+        public ActionResult GetOptionsToken()
+        {
+            Response.Headers.Add("Allow", "OPTIONS, GET");
+
+            return Ok();
+        }
 
         [HttpGet("/isTokenValid")]
         public string TokenValid()
@@ -114,11 +128,27 @@ namespace exampleWebAPI.Controllers
             _user.Token = GetToken();
             return _user.Token.IsValid().ToString();
         }
+        [HttpOptions("/isTokenValid")]
+        public ActionResult GetOptionsIsTokenValid()
+        {
+            Response.Headers.Add("Allow", "OPTIONS, GET");
+
+            return Ok();
+        }
 
         [HttpGet("/resetToken")]
         public string ResetToken()
         {
             return _tokenContext.ResetTokenNow(_user).Result.ToString();
+        }
+
+
+        [HttpOptions("/resetToken")]
+        public ActionResult GetOptionsResetToken()
+        {
+            Response.Headers.Add("Allow", "OPTIONS, GET");
+
+            return Ok();
         }
     }
 }

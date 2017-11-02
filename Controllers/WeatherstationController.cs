@@ -28,5 +28,14 @@ namespace exampleWebAPI.Controllers
         {
             return _context.Weerstation.FirstOrDefault(x => x.Id == id);
         }
+
+        [HttpOptions]
+        public ActionResult GetOptions()
+        {
+            Response.Headers.Add("Allow","OPTIONS, GET");
+
+            return Ok();
+        }
+
     }
 }
