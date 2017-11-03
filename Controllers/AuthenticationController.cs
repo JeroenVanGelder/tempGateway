@@ -111,13 +111,23 @@ namespace exampleWebAPI.Controllers
         }
 
         [HttpGet("/token")]
-        public Token GetToken()
+        public ActionResult GetToken()
         {
             var token = _tokenContext.GetToken(_user).Result;
-            if (token != null) return token;
+            if (token != null)
+            {
+                var resp = ParseTokenToJson(token);
+                Response.ContentLength = resp.Length;
+
+                return Ok(resp);
+            }
             if (_tokenContext.ResetTokenNow(_user).Result)
                 token = _tokenContext.GetToken(_user).Result;
-            return token;
+
+
+            var resp2 = ParseTokenToJson(token);
+            Response.ContentLength = resp2.Length;
+            return Ok(resp2);
         }
         [HttpOptions("/token")]
         public ActionResult GetOptionsToken()
@@ -130,8 +140,10 @@ namespace exampleWebAPI.Controllers
         [HttpGet("/isTokenValid")]
         public string TokenValid()
         {
-            _user.Token = GetToken();
-            return _user.Token.IsValid().ToString();
+            _user.Token = _tokenContext.GetToken(_user).Result;
+            var resp = _user.Token.IsValid().ToString();
+            Response.ContentLength = resp.Length;
+            return resp;
         }
         [HttpOptions("/isTokenValid")]
         public ActionResult GetOptionsIsTokenValid()
@@ -144,7 +156,9 @@ namespace exampleWebAPI.Controllers
         [HttpGet("/resetToken")]
         public string ResetToken()
         {
-            return _tokenContext.ResetTokenNow(_user).Result.ToString();
+            var t =  _tokenContext.ResetTokenNow(_user).Result.ToString();
+            Response.ContentLength = t.Length;
+            return t;
         }
 
 
@@ -154,6 +168,12 @@ namespace exampleWebAPI.Controllers
             Response.Headers.Add("Allow", "OPTIONS, GET");
 
             return Ok();
+        }
+
+        private static string ParseTokenToJson(Token token)
+        {
+            return JsonConvert.SerializeObject(token, Formatting.None,
+                new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
         }
     }
 }

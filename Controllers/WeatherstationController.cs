@@ -3,6 +3,7 @@ using System.Linq;
 using exampleWebAPI.Context;
 using exampleWebAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace exampleWebAPI.Controllers
 {
@@ -17,16 +18,31 @@ namespace exampleWebAPI.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<Weerstation> Get()
+        public ActionResult Get()
         {
-            return _context.Weerstation.ToList();
+            var ws0 = _context.Weerstation.ToList();
+            if (ws0 != null)
+            {
+                var rep = ParseWeerstationsToJson(ws0);
+                Response.ContentLength = rep.Length;
+                return Ok(rep);
+            }
+            return NoContent();
         }
 
 
         [HttpGet("{id}")]
-        public Weerstation Get(int id)
+        public ActionResult Get(int id)
         {
-            return _context.Weerstation.FirstOrDefault(x => x.Id == id);
+
+            var ws0 = _context.Weerstation.FirstOrDefault(x => x.Id == id);
+            if (ws0 != null)
+            {
+                var rep = ParseWeerstationToJson(ws0);
+                Response.ContentLength = rep.Length;
+                return Ok(rep);
+            }
+            return NoContent();
         }
 
         [HttpOptions]
@@ -36,6 +52,16 @@ namespace exampleWebAPI.Controllers
 
             return Ok();
         }
+        private static string ParseWeerstationToJson(Weerstation ws)
+        {
+            return JsonConvert.SerializeObject(ws, Formatting.None,
+                new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
+        }
 
+        private static string ParseWeerstationsToJson(List<Weerstation> ws)
+        {
+            return JsonConvert.SerializeObject(ws, Formatting.None,
+                new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
+        }
     }
 }

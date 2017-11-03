@@ -24,11 +24,17 @@ namespace exampleWebAPI.Controllers
 
 
         [HttpGet]
-        public List<Meting> Get()
+        public IActionResult Get()
         {
-            var m0 = _context.Meting.Include(m => m.Weatherstation).ToListAsync().Result;
+            var ws0 = _context.Meting.Include(m => m.Weatherstation).ToListAsync().Result;
+            if (ws0 != null)
+            {
+                var rep = ParseMetingenToJson(ws0);
+                Response.ContentLength = rep.Length;
+                return Ok(rep);
+            }
+            return NoContent();
 
-            return m0;
 
 
         }
@@ -39,7 +45,7 @@ namespace exampleWebAPI.Controllers
         public IActionResult Get(int id)
         {
             var m0 =  _context.Meting.Include(m => m.Weatherstation).FirstOrDefault(x => x.Id == id);
-            if (m0.Id != 0)
+            if (m0 != null)
             {
                 var rep = ParseMetingToJson(m0);
                 Response.ContentLength = rep.Length;
@@ -67,7 +73,7 @@ namespace exampleWebAPI.Controllers
             {
                 var metingJson = ParseMetingToJson(meting);
                 Response.ContentLength = metingJson.Length;
-                var newMetingUri = "/meting/" + meting.Id;
+                var newMetingUri = "/api/meting/" + meting.Id;
                 return Created(newMetingUri, metingJson);
             }
             else
@@ -110,6 +116,12 @@ namespace exampleWebAPI.Controllers
             Response.Headers.Add("Allow", "OPTIONS, GET");
 
             return Ok();
+        }
+
+        private static string ParseMetingenToJson(List<Meting> m)
+        {
+            return JsonConvert.SerializeObject(m, Formatting.None,
+                new JsonSerializerSettings { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
         }
 
     }
