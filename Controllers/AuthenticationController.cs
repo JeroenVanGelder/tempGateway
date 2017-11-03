@@ -44,11 +44,13 @@ namespace exampleWebAPI.Controllers
         {
             if (weerstation == null || weerstation.Id == 0)
             {
-                var parseNewWeatherStation = ParseWeerstationToJson(NewWeatherStation());
+                var ws0 = NewWeatherStation();
+                var parseNewWeatherStation = ParseWeerstationToJson(ws0);
 
                 Response.ContentLength = parseNewWeatherStation.Length;
+                var url0 = "/api/Weatherstation/" + ws0.Id;
 
-                return Created("uri", parseNewWeatherStation);
+                return Created(url0, parseNewWeatherStation);
             }
             var ws = IsPresentInDb(weerstation);
 
@@ -59,9 +61,12 @@ namespace exampleWebAPI.Controllers
                 return Ok(parseWeatherStationExisting);
             }
 
-            var parseWeatherStation = ParseWeerstationToJson(NewWeatherStation());
+            ws = NewWeatherStation();
+            var parseWeatherStation = ParseWeerstationToJson(ws);
             Response.ContentLength = parseWeatherStation.Length;
-            return Created("URI", parseWeatherStation);
+            var url1 = "/api/Weatherstation/" + ws.Id;
+
+            return Created(url1, parseWeatherStation);
         }
         [HttpOptions("/signIn")]
         public ActionResult GetOptionsSignin()

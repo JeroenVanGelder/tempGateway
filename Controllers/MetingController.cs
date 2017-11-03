@@ -26,15 +26,26 @@ namespace exampleWebAPI.Controllers
         [HttpGet]
         public List<Meting> Get()
         {
-            return _context.Meting.Include(m => m.Weatherstation).ToListAsync().Result;
+            var m0 = _context.Meting.Include(m => m.Weatherstation).ToListAsync().Result;
+
+            return m0;
+
+
         }
 
 
 
         [HttpGet("{id}")]
-        public Meting Get(int id)
+        public IActionResult Get(int id)
         {
-            return _context.Meting.Include(m => m.Weatherstation).FirstOrDefault(x => x.Id == id);
+            var m0 =  _context.Meting.Include(m => m.Weatherstation).FirstOrDefault(x => x.Id == id);
+            if (m0.Id != 0)
+            {
+                var rep = ParseMetingToJson(m0);
+                Response.ContentLength = rep.Length;
+                return Ok(rep);
+            }
+            return NoContent();
         }
 
 

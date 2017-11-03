@@ -25,7 +25,7 @@
             var labels = [], data = [];
 
             for (var i = 0; i < result.length; i++) {
-                labels.push(result[i].id);
+				labels.push(result[i].timestamp);
                 data.push(result[i].temperature);
                 console.log(result[i]);
             }
@@ -38,7 +38,7 @@
                         labels: labels,
                         datasets: [
                             {
-                                label: "idx",
+                                label: "Temperature",
                                 fillColor: "rgba(220,220,220,0.2)",
                                 strokeColor: "rgba(220,220,220,1)",
                                 pointColor: "rgba(220,220,220,1)",
